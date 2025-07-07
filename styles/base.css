@@ -1,0 +1,132 @@
+body {
+  background-color: #efe7dc;
+  font-family: sans-serif;
+  color: #1f2937;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Grid background only on this section */
+.grid-section {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Header Layout */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.nav-menu a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    position: relative;
+}
+
+/* Divider line for mobile */
+.nav-menu a:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #d1d5db;
+    margin-top: 0.5rem;
+}
+
+/* Logo */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    /* ensures it doesn't collapse */
+}
+
+
+.logo {
+    width: auto;
+    height: 60px;
+    /* or whatever height you prefer */
+    display: block;
+}
+
+/* Credits */
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.blue {
+    background-color: #3b82f6;
+}
+
+.dot.yellow {
+    background-color: #facc15;
+}
+
+.dot.pink {
+    background-color: #ec4899;
+}
+
+
+footer {
+  background-color: #eee1c1;
+  color: #1f2937;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-top: 1px solid #d6c4a8;
+  margin-top: 3rem;
+}
+/* Tablet and up */
+@media (min-width: 768px) {
+    .nav-menu {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .nav-menu a {
+        border-right: 1px solid #d1d5db;
+        padding-right: 1rem;
+    }
+
+    .nav-menu a:last-child {
+        border-right: none;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+}
