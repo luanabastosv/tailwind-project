@@ -1,91 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn all about Tailwind CSS and how to use it!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn all about Tailwind CSS and how to use it!"
+    />
     <title>About Tailwind CSS</title>
 
-    <link rel="stylesheet" href="styles/normalize-fwd.css">
-    <link rel="stylesheet" href="styles/base.css">
-</head>
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/base.css" />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <a class="screen-reader-text" href="#site-main">Skip to content</a>
-    <header>
+
+    <div class="site-wrapper">
+      <header>
         <ul class="nav-menu">
-            <li><a href="#what-is"> What is Tailwind CSS?</a></li>
-            <li><a href="#what-does"> What does Tailwind do?</a></li>
-            <li><a href="#why-use"> Why use Tailwind?</a></li>
-            <li><a href="#where-use"> Where should I use Tailwind?</a></li>
-            <li><a href="#examples"> Tailwind Examples</a></li>
-
+          <li><a href="#what-is"> What is Tailwind CSS?</a></li>
+          <li><a href="#what-does"> What does Tailwind do?</a></li>
+          <li><a href="#why-use"> Why use Tailwind?</a></li>
+          <li><a href="#where-use"> Where should I use Tailwind?</a></li>
+          <li><a href="#examples"> Tailwind Examples</a></li>
         </ul>
-    </header>
+      </header>
 
-    <main>
-        <h1> All about Tailwind CSS!</h1>
+      <main>
+        <div class="main-title">
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="41.807"
+            height="43.207"
+            viewBox="0 0 41.807 43.207"
+          >
+            <path
+              id="Path_9"
+              data-name="Path 9"
+              d="M22.486,5c1.943,9.513,9.714,19.025,17.486,21.4-7.772,2.378-15.543,11.891-17.486,21.4C20.543,38.294,12.772,28.782,5,26.4,12.772,24.025,20.543,14.513,22.486,5Z"
+              transform="translate(-1.583 -4.8)"
+              fill="#edc75a"
+              stroke="#3a3a3a"
+              stroke-width="2"
+            />
+          </svg> -->
+          <h1>All about Tailwind CSS:</h1>
+        </div>
+        <hr />
         <details open>
-            <summary>
-                <h2 id="what-is">What is Tailwind CSS?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
+          <summary>
+            <h2 id="what-is">
+              <span class="heading-span">What is</span> Tailwind CSS?
+            </h2>
+          </summary>
+          <p>
+            Tailwind is what it can be called an utility-first CSS framework. A
+            framework is a pre-built set of tools and rules that helps you build
+            software more easily, quickly, and in a more organized way. A
+            utility-first framework is a type of CSS framework that gives you
+            small, reusable classes—called utility classes—which you use
+            directly in your HTML to style elements.
+          </p>
+          <p>
+            Tailwind CSS focus provides utility to build ideas without spending
+            much of that time building CSS style sheets. Different from others,
+            a utility-first framework means that each class of it will do a
+            change in the style of the page. So in order to achieve the result
+            expected, the user put different types of tailwind classes at the
+            html.
+          </p>
         </details>
+        <hr />
 
         <details open>
-            <summary>
-                <h2 id="what-does">What does Tailwind do?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
+          <summary>
+            <h2 id="what-does">
+              <span class="heading-span">What does</span> Tailwind do?
+            </h2>
+          </summary>
+          <p>
+            Tailwind allows you to build prototypes of designs quickly and find
+            the look and feel of what you want. As the design matures, Tailwind
+            CSS allows you to compose these utility classes into CSS that is
+            built to simplify your markup once you've found the design you want.
+          </p>
         </details>
+        <hr />
 
         <details open>
-            <summary>
-                <h2 id="why-use">Why use Tailwind?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
+          <summary>
+            <h2 id="why-use">
+              <span class="heading-span">Why use</span> Tailwind?
+            </h2>
+          </summary>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            illo aperiam recusandae optio alias ipsum saepe facilis placeat quam
+            ratione!
+          </p>
         </details>
+        <hr />
 
         <details open>
-            <summary>
-                <h2 id="where-use">Where should I use Tailwind?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
+          <summary>
+            <h2 id="where-use">
+              <span class="heading-span">Where</span> should I use Tailwind?
+            </h2>
+          </summary>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            illo aperiam recusandae optio alias ipsum saepe facilis placeat quam
+            ratione!
+          </p>
         </details>
+        <hr />
 
         <details open>
-            <summary>
-                <h2 id="examples">Tailwind Examples</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
+          <summary>
+            <h2 id="examples"><span class="heading-span">Examples</span></h2>
+          </summary>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            illo aperiam recusandae optio alias ipsum saepe facilis placeat quam
+            ratione!
+          </p>
         </details>
-
-    </main>
-    <footer>
-        <p>&copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For educational purposes. </p>
-
-    </footer>
-</body>
-
+        <hr />
+      </main>
+      <footer>
+        <p>
+          &copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For
+          educational purposes.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
