@@ -70,6 +70,7 @@ header {
 .nav-menu a {
   color: #1f2937;
   text-decoration: none;
+  text-transform: uppercase;
   font-weight: 600;
   padding: 0.5rem;
   position: relative;
@@ -154,9 +155,19 @@ main {
   font-style: normal;
 }
 
+.examples details {
+  text-align: left;
+}
+
 .examples p {
   line-height: 1.5rem;
 }
+
+.examples h3 {
+  display: inline;
+
+}
+
 
 
 /*# Footer #*/
@@ -188,7 +199,7 @@ footer {
     border-right: none;
   }
 
-  .nav-menu a::after {
+  .nav-menu a:not(:last-child)::after {
     display: none;
   }
 }
