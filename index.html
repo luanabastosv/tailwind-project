@@ -97,24 +97,25 @@
       </summary>
       <ul>
         <li>
-          No More Writing Your Own CSS for Basics: Tailwind offers layout,
+          <strong>No More Writing Your Own CSS for Basics:</strong> Tailwind offers layout,
           spacing, typography, and other utility classes, so you hardly ever
           need to create your own CSS.
         </li>
         <li>
-          Rapid Prototyping: Ideal for quick iterations and MVPs since you
+          <strong>Rapid Prototyping:</strong> Ideal for quick iterations and MVPs since you
           can build and modify designs right in your HTML.
         </li>
         <li>
-          Component-Friendly: Promotes consistent, reusable user interface
+          <strong>Component-Friendly:</strong> Promotes consistent, reusable user interface
           elements with little stylistic costs.
         </li>
         <li>
-          Extremely Customizable: You may customize Tailwind configuration
+          <strong>Extremely Customizable:</strong> You may customize Tailwind configuration
           file to fit your brand or design system by defining your own
           colour scheme, spacing scale, breakpoints, and more.
         </li>
       </ul>
+
     </details>
     <hr />
 
@@ -127,33 +128,41 @@
 
       <ul>
         <li>
-          Startups & Large-Scale Apps: Tailwind grows with your project,
+          <strong> Startups & Large-Scale Apps:</strong> Tailwind grows with your project,
           from rapid MVPs to apps that are ready for production.
         </li>
         <li>
-          Admin dashboards: Perfect for quickly creating UIs that are clear,
+          <strong>Admin dashboards:</strong> Perfect for quickly creating UIs that are clear,
           responsive, and useful.
         </li>
         <li>
-          Landing pages and marketing websites: Easily build attractive
+          <strong>Landing pages and marketing websites:</strong> Easily build attractive
           layouts with integrated design tokens and responsiveness.
         </li>
         <li>
-          Portfolios and blogs: Developers who want complete control over
+          <strong>Portfolios and blogs:</strong> Developers who want complete control over
           design without having to write a ton of CSS would love it.
         </li>
       </ul>
     </details>
     <hr />
 
-    <details open>
+    <details open class="examples">
       <summary>
         <h2 id="examples"><span class="heading-span">Tailwind Examples</span></h2>
       </summary>
 
       <article>
         <h3>Basic Text Stylings</h3>
-        <p>Tailwind makes it easy to style text inline.</p>
+        <p>
+          Tailwind CSS makes it easy to style text directly in your HTML using utility classes. You can adjust font
+          weight with classes like <code>font-bold</code> or <code>font-thin</code>, add styles such as
+          <code>italic</code> or <code>underline</code>, and customize decorations with options like
+          <code>decoration-wavy</code> and color utilities. Tailwind also provides font family utilities, including
+          <code>font-sans</code>, <code>font-serif</code>, and <code>font-mono</code>, so you can quickly switch between
+          different typefaces without writing custom CSS.
+        </p>
+
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEdewyd"
           data-pen-title="Tailwind Basic stylings" data-user="MelissaGoon"
           style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -167,13 +176,21 @@
       <article>
         <h3>Colours in Tailwind</h3>
         <p>Tailwind provides a diverse default colour palette that makes styling easy for a variety of design styles.
+          Custom values can also be used for colours, for example: <code>bg-[#facc15]</code>.
         </p>
 
+
         <picture>
-          <!-- TODO: add images -->
+          <img sizes="(max-width: 768px) 100vw, 768px" srcset="
+assets/color-palette_dkuhdy_c_scale,w_288.png 288w,
+assets/color-palette_dkuhdy_c_scale,w_768.png 768w" src="color-palette_dkuhdy_c_scale,w_768.png"
+            alt="An image showing Tailwind's default colours">
         </picture>
 
-        <p>All Tailwind's colours come in 11 steps, with the lightest being 50 and the darkest being 950. </p>
+
+        <p>All Tailwind's colours come in 11 steps, with the lightest being <code>50</code> and the darkest being
+          <code>950</code>.
+        </p>
 
         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xbwKLEB"
           data-pen-title="Tailwind Default Colors" data-user="MelissaGoon"
@@ -183,6 +200,53 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+      </article>
+
+      <article>
+        <h3>Tailwind and the CSS Box Model</h3>
+        <p>
+          In Tailwind CSS, you can control every part of the CSS box model using utility classes. Set padding and margin
+          with shorthand classes like <code>p-*</code> and <code>m-*</code>, where the values follow Tailwind’s <a
+            target="_blank" rel="noopener noreferrer"
+            href="https://v3.tailwindcss.com/docs/customizing-spacing#default-spacing-scale">default spacing scale</a>,
+          typically ranging from <code>0</code> to <code>96</code>. Auto and custom values can also be used, for
+          example: <code>m-auto</code> and <code>p-[1.1rem]</code>.
+        </p>
+
+        <p>
+          You can also target specific sides or directions using the utility classes. For example, <code>pt-*</code> for
+          padding-top,
+          <code>pb-*</code> for padding-bottom, <code>pl-*</code> for padding-left and <code>pr-*</code> for
+          padding-right. Furthermode, handy classes such as <code>px-*</code> and <code>py-*</code> allow you to
+          manipulate both the left and right or top and bottom paddings respectively. This
+          makes it easy to fine-tune spacing without custom CSS.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEpPeMV"
+          data-pen-title="Untitled" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/LEpPeMV">
+              Tailwind Box Model</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+        <p>
+          Apply borders with utilities like <code>border</code>, and customize border width, color, and radius as
+          needed.
+        </p>
+
+        <p>
+          Control an element’s width and height using classes such as <code>w-*</code>, <code>h-*</code>, or
+          percentage-based values like <code>w-1/2</code>. By default Tailwind has border-box active.
+          Tailwind also provides <code>min</code> and <code>max</code> classes for setting minimum and maximum width
+          and height, such as <code>min-w-*</code> or <code>max-h-*</code>. For layout flexibility, you can use
+          <code>w-full</code> or <code>h-full</code> to make an element fill its parent container, or
+          <code>w-screen</code> and <code>h-screen</code> to stretch an element to the full width or height of the
+          viewport.
+        </p>
+
 
       </article>
 
