@@ -1,172 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Learn all about Tailwind CSS and how to use it!"
-    />
-    <title>About Tailwind CSS</title>
 
-    <link rel="stylesheet" href="styles/normalize-fwd.css" />
-    <link rel="stylesheet" href="styles/base.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn all about Tailwind CSS and how to use it!" />
+  <title>About Tailwind CSS</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="styles/normalize-fwd.css" />
+  <link rel="stylesheet" href="styles/base.css" />
 
-  <body>
-    <a class="screen-reader-text" href="#site-main">Skip to content</a>
-    <header>
-        <nav class="nav-menu">
-            <a href="#what-is">WHAT-IS</a>
-            <a href="#what-does">WHAT-DOES</a>
-            <a href="#why-use">WHY-USE</a>
-            <a href="#where-use">WHERE-USE</a>
-            <a href="#examples">EXAMPLES</a>
-        </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="grid-section">
-            <div class="logo-container">
-                <img src="assets/tailwindcss-logotype.svg" alt="Tailwind CSS Logo" class="logo" />
-            </div>
+<body>
+  <a class="screen-reader-text" href="#site-main">Skip to content</a>
+  <header>
+    <nav class="nav-menu">
+      <a href="#what-is">WHAT-IS</a>
+      <a href="#what-does">WHAT-DOES</a>
+      <a href="#why-use">WHY-USE</a>
+      <a href="#where-use">WHERE-USE</a>
+      <a href="#examples">EXAMPLES</a>
+    </nav>
 
-            <div class="credits">
-                <span>BY ANGELA, LUANA AND MELISSA</span>
-                <div class="dots">
-                    <span class="dot blue"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot pink"></span>
-                </div>
-            </div>
+    <div class="grid-section">
+      <div class="logo-container">
+        <img src="assets/tailwindcss-logotype.svg" alt="Tailwind CSS Logo" class="logo" />
+      </div>
+
+      <div class="credits">
+        <span>BY ANGELA, LUANA AND MELISSA</span>
+        <div class="dots">
+          <span class="dot blue"></span>
+          <span class="dot yellow"></span>
+          <span class="dot pink"></span>
         </div>
-    </header>
-
-      <main>
-        <h1>All about Tailwind CSS:</h1>
-        <hr />
-
-        <details open>
-          <summary>
-            <h2 id="what-is">
-              <span class="heading-span">What is</span> Tailwind CSS?
-            </h2>
-          </summary>
-          <p>
-            Tailwind CSS is known as a utility-first CSS framework. A framework
-            is a pre-defined set of tools and guidelines that helps you develop
-            software more efficiently, quickly, and in a more structured way. A
-            utility-first framework provides small, reusable classes — called
-            utility classes — that you apply directly in your HTML to style
-            elements.
-          </p>
-          <p>
-            Tailwind CSS focuses on providing utilities to help you build
-            interfaces without spending too much time writing custom CSS
-            stylesheets. Unlike traditional frameworks, a utility-first approach
-            means that each class applies a specific change to the appearance of
-            the element. To achieve the desired result, the developer combines
-            multiple Tailwind classes directly in the HTML.
-          </p>
-        </details>
-        <hr />
-
-        <details open>
-          <summary>
-            <h2 id="what-does">
-              <span class="heading-span">What does</span> Tailwind do?
-            </h2>
-          </summary>
-          <p>
-            Tailwind allows you to quickly build design prototypes and
-            experiment with different looks and layouts. As your design evolves,
-            Tailwind CSS lets you organize and group utility classes into custom
-            CSS, helping simplify your HTML markup once you've finalized the
-            design.
-          </p>
-        </details>
-        <hr />
-
-        <details open>
-          <summary>
-            <h2 id="why-use">
-              <span class="heading-span">Why use</span> Tailwind?
-            </h2>
-          </summary>
-          <ul>
-            <li>
-              No More Writing Your Own CSS for Basics: Tailwind offers layout,
-              spacing, typography, and other utility classes, so you hardly ever
-              need to create your own CSS.
-            </li>
-            <li>
-              Rapid Prototyping: Ideal for quick iterations and MVPs since you
-              can build and modify designs right in your HTML.
-            </li>
-            <li>
-              Component-Friendly: Promotes consistent, reusable user interface
-              elements with little stylistic costs.
-            </li>
-            <li>
-              Extremely Customizable: You may customize Tailwind configuration
-              file to fit your brand or design system by defining your own
-              colour scheme, spacing scale, breakpoints, and more.
-            </li>
-          </ul>
-        </details>
-        <hr />
-
-        <details open>
-          <summary>
-            <h2 id="where-use">
-              <span class="heading-span">Where</span> should I use Tailwind?
-            </h2>
-          </summary>
-
-          <ul>
-            <li>
-              Startups & Large-Scale Apps: Tailwind grows with your project,
-              from rapid MVPs to apps that are ready for production.
-            </li>
-            <li>
-              Admin dashboards: Perfect for quickly creating UIs that are clear,
-              responsive, and useful.
-            </li>
-            <li>
-              Landing pages and marketing websites: Easily build attractive
-              layouts with integrated design tokens and responsiveness.
-            </li>
-            <li>
-              Portfolios and blogs: Developers who want complete control over
-              design without having to write a ton of CSS would love it.
-            </li>
-          </ul>
-        </details>
-        <hr />
-
-        <details open>
-          <summary>
-            <h2 id="examples"><span class="heading-span">Examples</span></h2>
-          </summary>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            illo aperiam recusandae optio alias ipsum saepe facilis placeat quam
-            ratione!
-          </p>
-        </details>
-        <hr />
-      </main>
-      <footer>
-        <p>
-          &copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For
-          educational purposes.
-        </p>
-      </footer>
+      </div>
     </div>
-  </body>
+  </header>
+
+  <main>
+    <h1>All about Tailwind CSS:</h1>
+    <hr />
+
+    <details open>
+      <summary>
+        <h2 id="what-is">
+          <span class="heading-span">What is</span> Tailwind CSS?
+        </h2>
+      </summary>
+      <p>
+        Tailwind CSS is known as a utility-first CSS framework. A framework
+        is a pre-defined set of tools and guidelines that helps you develop
+        software more efficiently, quickly, and in a more structured way. A
+        utility-first framework provides small, reusable classes — called
+        utility classes — that you apply directly in your HTML to style
+        elements.
+      </p>
+      <p>
+        Tailwind CSS focuses on providing utilities to help you build
+        interfaces without spending too much time writing custom CSS
+        stylesheets. Unlike traditional frameworks, a utility-first approach
+        means that each class applies a specific change to the appearance of
+        the element. To achieve the desired result, the developer combines
+        multiple Tailwind classes directly in the HTML.
+      </p>
+    </details>
+    <hr />
+
+    <details open>
+      <summary>
+        <h2 id="what-does">
+          <span class="heading-span">What does</span> Tailwind do?
+        </h2>
+      </summary>
+      <p>
+        Tailwind allows you to quickly build design prototypes and
+        experiment with different looks and layouts. As your design evolves,
+        Tailwind CSS lets you organize and group utility classes into custom
+        CSS, helping simplify your HTML markup once you've finalized the
+        design.
+      </p>
+    </details>
+    <hr />
+
+    <details open>
+      <summary>
+        <h2 id="why-use">
+          <span class="heading-span">Why use</span> Tailwind?
+        </h2>
+      </summary>
+      <ul>
+        <li>
+          No More Writing Your Own CSS for Basics: Tailwind offers layout,
+          spacing, typography, and other utility classes, so you hardly ever
+          need to create your own CSS.
+        </li>
+        <li>
+          Rapid Prototyping: Ideal for quick iterations and MVPs since you
+          can build and modify designs right in your HTML.
+        </li>
+        <li>
+          Component-Friendly: Promotes consistent, reusable user interface
+          elements with little stylistic costs.
+        </li>
+        <li>
+          Extremely Customizable: You may customize Tailwind configuration
+          file to fit your brand or design system by defining your own
+          colour scheme, spacing scale, breakpoints, and more.
+        </li>
+      </ul>
+    </details>
+    <hr />
+
+    <details open>
+      <summary>
+        <h2 id="where-use">
+          <span class="heading-span">Where</span> should I use Tailwind?
+        </h2>
+      </summary>
+
+      <ul>
+        <li>
+          Startups & Large-Scale Apps: Tailwind grows with your project,
+          from rapid MVPs to apps that are ready for production.
+        </li>
+        <li>
+          Admin dashboards: Perfect for quickly creating UIs that are clear,
+          responsive, and useful.
+        </li>
+        <li>
+          Landing pages and marketing websites: Easily build attractive
+          layouts with integrated design tokens and responsiveness.
+        </li>
+        <li>
+          Portfolios and blogs: Developers who want complete control over
+          design without having to write a ton of CSS would love it.
+        </li>
+      </ul>
+    </details>
+    <hr />
+
+    <details open>
+      <summary>
+        <h2 id="examples"><span class="heading-span">Tailwind Examples</span></h2>
+      </summary>
+
+      <article>
+        <h3>Basic Text Stylings</h3>
+        <p>Tailwind makes it easy to style text inline.</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEdewyd"
+          data-pen-title="Tailwind Basic stylings" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/qEdewyd">
+              Tailwind Basic stylings</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </article>
+
+      <article>
+        <h3>Colours in Tailwind</h3>
+        <p>Tailwind provides a diverse default colour palette that makes styling easy for a variety of design styles.
+        </p>
+
+        <picture>
+          <!-- TODO: add images -->
+        </picture>
+
+        <p>All Tailwind's colours come in 11 steps, with the lightest being 50 and the darkest being 950. </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xbwKLEB"
+          data-pen-title="Tailwind Default Colors" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/xbwKLEB">
+              Tailwind Default Colors</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+      </article>
+
+    </details>
+    <hr />
+  </main>
+  <footer>
+    <p>
+      &copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For
+      educational purposes.
+    </p>
+  </footer>
+  </div>
+</body>
+
 </html>
