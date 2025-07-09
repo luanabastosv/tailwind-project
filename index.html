@@ -2,90 +2,454 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn all about Tailwind CSS and how to use it!">
-    <title>About Tailwind CSS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn all about Tailwind CSS and how to use it!" />
+  <title>About Tailwind CSS</title>
 
-    <link rel="stylesheet" href="styles/normalize-fwd.css">
-    <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/normalize-fwd.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
-    <a class="screen-reader-text" href="#site-main">Skip to content</a>
-    <header>
-        <ul class="nav-menu">
-            <li><a href="#what-is"> What is Tailwind CSS?</a></li>
-            <li><a href="#what-does"> What does Tailwind do?</a></li>
-            <li><a href="#why-use"> Why use Tailwind?</a></li>
-            <li><a href="#where-use"> Where should I use Tailwind?</a></li>
-            <li><a href="#examples"> Tailwind Examples</a></li>
+  <a class="screen-reader-text" href="#site-main">Skip to content</a>
+  <header>
+    <nav class="nav-menu">
+      <a href="#what-is">What it is</a>
+      <a href="#what-does">What it does</a>
+      <a href="#why-use">Why use it</a>
+      <a href="#where-use">Where to use it</a>
+      <a href="#examples">Tailwind Examples</a>
+    </nav>
 
-        </ul>
-    </header>
+    <div class="grid-section">
+      <div class="logo-container">
+        <img src="assets/tailwindcss-logotype.svg" alt="Tailwind CSS Logo" class="logo" />
+      </div>
 
-    <main>
-        <h1> All about Tailwind CSS!</h1>
-        <details open>
-            <summary>
-                <h2 id="what-is">What is Tailwind CSS?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
-        </details>
+      <div class="credits">
+        <span>BY ANGELA, LUANA AND MELISSA</span>
+        <div class="dots">
+          <span class="dot blue"></span>
+          <span class="dot yellow"></span>
+          <span class="dot pink"></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <details open>
-            <summary>
-                <h2 id="what-does">What does Tailwind do?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
-        </details>
+  <main>
+    <h1>All about Tailwind CSS:</h1>
+    <hr />
 
-        <details open>
-            <summary>
-                <h2 id="why-use">Why use Tailwind?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
-        </details>
+    <details open>
+      <summary>
+        <h2 id="what-is">
+          <span class="heading-span">What is</span> Tailwind CSS?
+        </h2>
+      </summary>
+      <p>
+        Tailwind CSS is known as a utility-first CSS framework. A framework
+        is a pre-defined set of tools and guidelines that helps you develop
+        software more efficiently, quickly, and in a more structured way. A
+        utility-first framework provides small, reusable classes — called
+        utility classes — that you apply directly in your HTML to style
+        elements.
+      </p>
+      <p>
+        Tailwind CSS focuses on providing utilities to help you build
+        interfaces without spending too much time writing custom CSS
+        stylesheets. Unlike traditional frameworks, a utility-first approach
+        means that each class applies a specific change to the appearance of
+        the element. To achieve the desired result, the developer combines
+        multiple Tailwind classes directly in the HTML.
+      </p>
+    </details>
+    <hr />
 
-        <details open>
-            <summary>
-                <h2 id="where-use">Where should I use Tailwind?</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
-        </details>
+    <details open>
+      <summary>
+        <h2 id="what-does">
+          <span class="heading-span">What does</span> Tailwind do?
+        </h2>
+      </summary>
+      <p>
+        Tailwind allows you to quickly build design prototypes and
+        experiment with different looks and layouts. As your design evolves,
+        Tailwind CSS lets you organize and group utility classes into custom
+        CSS, helping simplify your HTML markup once you've finalized the
+        design.
+      </p>
+    </details>
+    <hr />
 
-        <details open>
-            <summary>
-                <h2 id="examples">Tailwind Examples</h2>
-            </summary>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo aperiam recusandae optio alias
-                ipsum saepe facilis placeat quam ratione!
-            <h3>Subheading</h3>
-            </p>
-        </details>
+    <details open>
+      <summary>
+        <h2 id="why-use">
+          <span class="heading-span">Why use</span> Tailwind?
+        </h2>
+      </summary>
+      <ul>
+        <li>
+          <strong>No More Writing Your Own CSS for Basics:</strong> Tailwind offers layout,
+          spacing, typography, and other utility classes, so you hardly ever
+          need to create your own CSS.
+        </li>
+        <li>
+          <strong>Rapid Prototyping:</strong> Ideal for quick iterations and MVPs since you
+          can build and modify designs right in your HTML.
+        </li>
+        <li>
+          <strong>Component-Friendly:</strong> Promotes consistent, reusable user interface
+          elements with little stylistic costs.
+        </li>
+        <li>
+          <strong>Extremely Customizable:</strong> You may customize Tailwind configuration
+          file to fit your brand or design system by defining your own
+          colour scheme, spacing scale, breakpoints, and more.
+        </li>
+      </ul>
 
-    </main>
-    <footer>
-        <p>&copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For educational purposes. </p>
+    </details>
+    <hr />
 
-    </footer>
+    <details open>
+      <summary>
+        <h2 id="where-use">
+          <span class="heading-span">Where</span> should I use Tailwind?
+        </h2>
+      </summary>
+
+      <ul>
+        <li>
+          <strong> Startups & Large-Scale Apps:</strong> Tailwind grows with your project,
+          from rapid MVPs to apps that are ready for production.
+        </li>
+        <li>
+          <strong>Admin dashboards:</strong> Perfect for quickly creating UIs that are clear,
+          responsive, and useful.
+        </li>
+        <li>
+          <strong>Landing pages and marketing websites:</strong> Easily build attractive
+          layouts with integrated design tokens and responsiveness.
+        </li>
+        <li>
+          <strong>Portfolios and blogs:</strong> Developers who want complete control over
+          design without having to write a ton of CSS would love it.
+        </li>
+      </ul>
+    </details>
+    <hr />
+
+    <details open class="examples">
+      <summary>
+        <h2 id="examples"><span class="heading-span">Tailwind Examples</span></h2>
+      </summary>
+
+      <details>
+        <summary>
+          <h3>Basic Text Stylings</h3>
+        </summary>
+        <p>
+          Tailwind CSS makes it easy to style text directly in your HTML using utility classes. You can adjust font
+          weight with classes like <code>font-bold</code> or <code>font-thin</code>, add styles such as
+          <code>italic</code> or <code>underline</code>, and customize decorations with options like
+          <code>decoration-wavy</code> and color utilities. Tailwind also provides font family utilities, including
+          <code>font-sans</code>, <code>font-serif</code>, and <code>font-mono</code>, so you can quickly switch between
+          different typefaces without writing custom CSS.
+        </p>
+
+        <p>
+          You can also control text size using the <code>text-*</code> utility classes. <a target="_blank"
+            rel="noopener noreferrer" href="https://tailwindcss.com/docs/font-size">Tailwind's default text size
+            scale</a> includes options like <code>text-xs</code>, <code>text-base</code>, <code>text-xl</code>, and up
+          to
+          <code>text-9xl</code>, making it easy to consistently scale headings, body text, captions, and more. These
+          classes not only adjust the font size but also automatically manage line height for improved readability.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEdewyd"
+          data-pen-title="Tailwind Basic stylings" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/qEdewyd">
+              Tailwind Basic stylings</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </details>
+
+      <details>
+        <summary>
+          <h3>Colours in Tailwind</h3>
+        </summary>
+        <p>
+          Tailwind provides a diverse default colour palette designed to cover a wide range of design needs. For
+          example, <code>bg-blue-500</code> for a medium blue
+          background, or <code>text-gray-800</code> for dark gray text. Custom values can also be used for colours, for
+          example: <code>bg-[#facc15]</code>.
+        </p>
+
+        <p>
+          You can apply these colour utilities to backgrounds, text, borders, rings, shadows, and even gradients, giving
+          you flexible and consistent control over the visual style of your project.
+        </p>
+
+
+        <picture>
+          <img sizes="(max-width: 768px) 100vw, 768px" srcset="
+assets/color-palette_dkuhdy_c_scale,w_288.png 288w,
+assets/color-palette_dkuhdy_c_scale,w_768.png 768w" src="color-palette_dkuhdy_c_scale,w_768.png"
+            alt="An image showing Tailwind's default colours">
+        </picture>
+
+        <p>All Tailwind's colours come in 11 steps, with the lightest being <code>50</code> and the darkest being
+          <code>950</code>.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xbwKLEB"
+          data-pen-title="Tailwind Default Colors" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/xbwKLEB">
+              Tailwind Default Colors</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </details>
+
+      <details>
+        <summary>
+          <h3>Tailwind and the CSS Box Model</h3>
+        </summary>
+        <p>
+          In Tailwind CSS, you can control every part of the CSS box model using utility classes. Set padding and margin
+          with shorthand classes like <code>p-*</code> and <code>m-*</code>, where the values follow <a target="_blank"
+            rel="noopener noreferrer"
+            href="https://v3.tailwindcss.com/docs/customizing-spacing#default-spacing-scale">Tailwind’s default spacing
+            scale</a>,
+          typically ranging from <code>0</code> to <code>96</code>. Auto and custom values can also be used, for
+          example: <code>m-auto</code> and <code>p-[1.1rem]</code>.
+        </p>
+
+        <p>
+          You can also target specific sides or directions using the utility classes. For example, <code>pt-*</code> for
+          padding-top,
+          <code>pb-*</code> for padding-bottom, <code>pl-*</code> for padding-left and <code>pr-*</code> for
+          padding-right. Furthermore, handy classes such as <code>px-*</code> and <code>py-*</code> allow you to
+          manipulate both the left and right or top and bottom paddings respectively. This
+          makes it easy to fine-tune spacing without custom CSS.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEpPeMV"
+          data-pen-title="Untitled" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/LEpPeMV">
+              Tailwind Box Model</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+        <p>
+          Apply borders with utilities like <code>border</code>, and customize border width, color, and radius as
+          needed.
+        </p>
+
+        <p>
+          Control an element’s width and height using classes such as <code>w-*</code>, <code>h-*</code>, or
+          percentage-based values like <code>w-1/2</code>. By default Tailwind has border-box active.
+          Tailwind also provides <code>min</code> and <code>max</code> classes for setting minimum and maximum width
+          and height, such as <code>min-w-*</code> or <code>max-h-*</code>. For layout flexibility, you can use
+          <code>w-full</code> or <code>h-full</code> to make an element fill its parent container, or
+          <code>w-screen</code> and <code>h-screen</code> to stretch an element to the full width or height of the
+          viewport.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          <h3>Flex & Grid</h3>
+        </summary>
+
+
+        <p>
+          Tailwind CSS makes it simple to build responsive, flexible layouts using utility classes for both
+          <strong>Flexbox</strong> and <strong>CSS Grid</strong>.
+        </p>
+
+        <p>
+          To create a flex container, use the <code>flex</code> class on a parent element. You can then control the
+          alignment of child elements with utilities like <code>justify-center</code> (equivalent to
+          <code>justify-content:center</code> ) and
+          <code>items-baseline</code> ( <code>align-items:baseline</code> ).
+        </p>
+
+        <p>
+          CSS Grid in Tailwind works by applying the <code>grid</code> class to a parent container, then defining
+          the number of columns using <code>grid-cols-*</code> and spacing between grid items with <code>gap-*</code>.
+          You can control how individual grid items span rows or columns using classes like <code>col-span-2</code>,
+          <code>row-span-2</code>, or set their position within the grid using classes like <code>col-start-*</code>,
+          <code>col-end-*</code>, and <code>row-start-*</code>.
+        </p>
+
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYagVpb"
+          data-pen-title="Tailwind Flex and Grid" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/MYagVpb">
+              Tailwind Flex and Grid</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </details>
+
+      <details>
+        <summary>
+          <h3>Pseudo-Classes & Responsive Styling</h3>
+        </summary>
+
+        <p>
+          Tailwind CSS makes it easy to apply styles based on user interaction and device size using utility-friendly
+          pseudo-class variants and responsive prefixes. Pseudo-classes like <code>hover:</code>, <code>focus:</code>,
+          <code>active:</code>, and <code>disabled:</code> can be added in front of any utility class to change its
+          behavior in specific states. For example, <code>hover:bg-blue-500</code> changes the background color when a
+          user hovers over an element, and <code>focus:ring-2</code> adds a ring outline when the element receives
+          focus.
+        </p>
+
+        <p>
+          Responsive styling in Tailwind is mobile first, appying styles at specific screen width breakpoints. The
+          default breakpoints are <strong>sm (40rem)</strong>, <strong>md (48rem)</strong>, <strong>lg (64rem)</strong>,
+          <strong>xl (80rem)</strong>, and
+          <strong>2xl (96rem)</strong>. You can combine these with any utility class to apply different styles at
+          different viewport sizes.
+        </p>
+
+        <p>
+          Tailwind also provides built-in support for dark mode, making it simple to create themes that
+          adapt to the user’s system preference or a custom trigger. By default, you can prefix any utility class with
+          <code>dark:</code> to apply it when dark mode is active.
+        </p>
+
+        <p>
+          Both pseudo-class variants and responsive prefixes can be combined in a single class name, for example:
+          <code>hover:lg:text-pink-500</code>.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gbaYeaq"
+          data-pen-title="Pseudo-Classes &amp;amp; Responsive Styling" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/gbaYeaq">
+              Pseudo-Classes &amp; Responsive Styling</a> by MelissaGoon (<a
+              href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+
+      </details>
+
+      <details>
+        <summary>
+          <h3>Built-In Animations</h3>
+        </summary>
+
+
+        <p>
+          Tailwind CSS includes a set of simple, built-in animations that you can apply to elements using utility
+          classes. They include <code>animate-spin</code>, <code>animate-ping</code>, <code>animate-bounce</code>,
+          <code>animate-pulse</code> and <code>animate-none</code> used to override any other animations.
+        </p>
+        <p>
+          All of these animations are applied by simply adding the class to an element, and you can customize their
+          speed, delay, or other behaviors by extending your <code>tailwind.config.js</code> if needed.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LEpPdzr"
+          data-pen-title="Tailwind Built In Animations" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/LEpPdzr">
+              Tailwind Built In Animations</a> by MelissaGoon (<a
+              href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+      </details>
+
+      <details>
+        <summary>
+          <h3>Some Decorative Utilities</h3>
+        </summary>
+        <p>
+          In Tailwind CSS, you can easily add shadows to elements using the <code>shadow</code> utility classes. These
+          vary in size, with options like <code>shadow-sm</code>, <code>shadow-md</code>,
+          <code>shadow-lg</code>, and <code>shadow-2xl</code>.
+        </p>
+
+        <p>
+          Alongside box shadows, Tailwind offers <code>ring</code> utilities for creating outlines around elements.
+          Unlike borders, rings sit outside the element’s border and are often useful for focus states or emphasis. You
+          can control ring thickness with classes like <code>ring-*</code>,
+          and adjust their color and offset using classes like <code>ring-blue-500</code> and
+          <code>ring-offset-*</code>.
+        </p>
+
+        <p>
+          Tailwind also simplifies working with gradients using utility classes like <code>bg-gradient-to-r</code>,
+          <code>bg-gradient-to-b</code>, and more, which set the gradient direction. You can define starting, middle,
+          and ending colors using <code>from-*</code>, <code>via-*</code>, and <code>to-*</code> classes. For example, a
+          smooth horizontal gradient from blue to pink would use
+          <code>bg-gradient-to-r from-blue-500 to-pink-500</code>. This makes creating custom, responsive gradients
+          quick and consistent without writing custom CSS rules.
+        </p>
+
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="myebXgj"
+          data-pen-title="Decorative Utilities" data-user="MelissaGoon"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MelissaGoon/pen/myebXgj">
+              Decorative Utilities</a> by MelissaGoon (<a href="https://codepen.io/MelissaGoon">@MelissaGoon</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </details>
+
+      <details>
+        <summary>
+          <h3>Accessibility in Tailwind</h3>
+        </summary>
+
+        <p>
+          Tailwind CSS includes several built-in utilities to help improve the accessibility of your projects. For
+          example, it includes a <code>sr-only</code> class, which visually hides content but keeps
+          it available for screen readers. This is helpful for adding extra descriptive text, instructions, or labels
+          that assistive technologies can access without displaying them on the screen. To make hidden content visible
+          again, you can use <code>not-sr-only</code>.
+        </p>
+
+        <p>
+          Tailwind also respects user preferences for reduced motion by offering the <code>motion-reduce</code> variant.
+          You can use this to disable or simplify animations and transitions for users who have enabled "Reduce Motion"
+          in their operating system settings. For example: <code>motion-reduce:animate-none</code>. You can also use the
+          <code>motion-safe</code> variant to mark certain animations as safe for users who prefer reduced motion.
+        </p>
+
+      </details>
+
+    </details>
+    <hr />
+  </main>
+  <footer>
+    <p>
+      &copy; Angela Chen, Luana Bastos Veras, Melissa Goon 2025. For
+      educational purposes.
+    </p>
+  </footer>
+  </div>
 </body>
 
 </html>
