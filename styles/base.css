@@ -2,9 +2,8 @@
 body {
   margin: 0;
   font-family: "Assistant", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 3rem;
   color: #282828;
   background-color: #ede7dc;
   text-align: center;
@@ -15,21 +14,41 @@ html {
   scroll-behavior: smooth;
 }
 
-.site-wrapper {
-  max-width: 120rem;
-  margin: 0 auto;
+
+ul {
+  text-align: left;
 }
+
+/*# Links #*/
+a {
+  color: #001EC7;
+}
+
+a:visited {
+  color: #950050;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  text-decoration: wavy;
+}
+
+
 
 /* Text */
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "Mukta", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Mukta", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -37,8 +56,37 @@ h2 {
 
 p {
   text-align: left;
+  line-height: 1.5rem;
 }
 
+@media (min-width: 48em) {
+  body {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+
+  /* Text */
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    line-height: 3rem;
+  }
+
+}
 
 /*# Header #*/
 
@@ -76,6 +124,11 @@ header {
   position: relative;
 }
 
+.nav-menu a:focus,
+.nav-menu a:active {
+  text-decoration: underline overline;
+}
+
 /* Divider line for mobile */
 .nav-menu a:not(:last-child)::after {
   content: "";
@@ -83,6 +136,26 @@ header {
   height: 1px;
   background-color: #d1d5db;
   margin-top: 0.5rem;
+}
+
+@media (min-width: 48em) {
+  .nav-menu {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav-menu a {
+    border-right: 1px solid #d1d5db;
+    padding-right: 1rem;
+  }
+
+  .nav-menu a:last-child {
+    border-right: none;
+  }
+
+  .nav-menu a:not(:last-child)::after {
+    display: none;
+  }
 }
 
 /* Logo */
@@ -139,7 +212,7 @@ header {
 /*# Main #*/
 main {
   margin: 0 auto;
-  max-width: 48rem;
+  max-width: 60rem;
 }
 
 .main-title {
@@ -149,15 +222,36 @@ main {
 }
 
 .heading-span {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Mukta", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
+details summary::marker {
+  content: "✧";
+}
+
+details[open] summary::marker {
+  content: "✦";
+  color: #001EC7;
+}
+
+.examples details summary::marker {
+  content: "✧";
+  color: #282828;
+}
+
+.examples details[open] summary::marker {
+  content: "✦";
+  color: #001EC7;
+}
+
+
 .examples details {
   text-align: left;
 }
+
 
 .examples p {
   line-height: 1.5rem;
@@ -168,6 +262,24 @@ main {
 
 }
 
+summary:focus,
+summary:active {
+  text-decoration: underline #001EC7;
+  color: #001EC7;
+}
+
+@media (min-width: 48em) {
+  .heading-span {
+    font-size: 3rem;
+  }
+
+  summary:hover {
+    color: #001EC7;
+
+  }
+
+
+}
 
 
 /*# Footer #*/
@@ -175,7 +287,7 @@ main {
 footer {
   background-color: #eee1c1;
   color: #1f2937;
-  text-align: center;
+
   padding: 2rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
@@ -183,23 +295,6 @@ footer {
   margin-top: 3rem;
 }
 
-/*# Tablet and up #*/
-@media (min-width: 48em) {
-  .nav-menu {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .nav-menu a {
-    border-right: 1px solid #d1d5db;
-    padding-right: 1rem;
-  }
-
-  .nav-menu a:last-child {
-    border-right: none;
-  }
-
-  .nav-menu a:not(:last-child)::after {
-    display: none;
-  }
+footer p {
+  text-align: center;
 }
